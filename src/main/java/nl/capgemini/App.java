@@ -10,6 +10,8 @@ import nl.capgemini.math.Wiskunde;
 public class App {
     public static void main(String[] args)  {
 
+        Debug.log("Entering main ... ");
+
         try {
             int result = Wiskunde.divide(5,1);
         }
@@ -31,6 +33,8 @@ public class App {
         catch(Exception e) {
             System.out.println("Dat ging niet goed ... ");
         }
+
+        Debug.log("Leaving main ... ");
 
 
 

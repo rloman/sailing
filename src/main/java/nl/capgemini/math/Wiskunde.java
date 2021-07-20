@@ -1,11 +1,16 @@
 package nl.capgemini.math;
 
+import nl.capgemini.Debug;
 import nl.capgemini.exception.InvalidSailingException;
 import nl.capgemini.exception.InvalidSailingRuntimeException;
 
 public final class Wiskunde {
 
+
+
     public static int divide(int teller, int noemer) throws InvalidSailingException  {
+
+        Debug.log("Entering divide with "+teller+" and "+noemer);
 
         if(noemer == -1) {
             throw new InvalidSailingRuntimeException();
